@@ -19,6 +19,15 @@ name = AllLetters;
 copyright = "Copyright © 2020 by Tyler Finck. All rights reserved.";
 customParameters = (
 {
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+}
+);
+},
+{
 name = "Use Typo Metrics";
 value = 1;
 },

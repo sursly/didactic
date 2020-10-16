@@ -2,6 +2,6 @@
 
 ![Some basics with Didactic.](didactic-typesample.png "basics with didactic")
 
-A simple serif. Work very much in progress.
+A simple serif. Work very much in progress. Now variable.
 
-On the way: Bold weight and corresponding italics.
+Still to do: complete punctuation/symbols/diacritics across weights, kerning, italics.

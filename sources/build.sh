@@ -2,8 +2,24 @@
 set -e
 
 
-mkdir -p ./fonts ./fonts/static/ttf ./fonts/static/otf
+mkdir -p ./fonts ./fonts/static/ttf ./fonts/static/otf ./fonts/variable
 
+echo "Generating VFs"
+fontmake -g sources/Didactic.glyphs -o variable --output-path ./fonts/variable/Didactic[wght].ttf
+
+echo "Post processing VFs"
+for ttf in ./fonts/variable/*.ttf
+do
+	gftools fix-dsig --autofix $ttf;
+	gftools fix-nonhinting $ttf "$ttf.fix";
+	mv "$ttf.fix" $ttf;
+	gftools fix-unwanted-tables --tables MVAR $ttf;
+	gftools fix-vf-meta $ttf;
+	mv "$ttf.fix" $ttf;
+    woff2_compress $ttf;
+done
+
+rm ./fonts/variable/*gasp*
 
 
 echo "Generating Static fonts"
