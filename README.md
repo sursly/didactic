@@ -4,4 +4,4 @@
 
 A simple serif. Work very much in progress. Now variable.
 
-Still to do: complete punctuation/symbols/diacritics across weights, kerning, italics.
+Still to do: diacritic weights changes, italics
