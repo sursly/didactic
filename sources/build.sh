@@ -57,18 +57,7 @@ woff2s=$(ls ./fonts/static/*/*.woff2)
 for woff2 in $woff2s; do
     mv $woff2 ./fonts/web/woff2/$(basename $woff2)
 done
-#########
-rm -rf ./fonts/web/woff
-ttfs=$(ls ./fonts/static/ttf/*.ttf)
-for ttf in $ttfs; do
-    sfnt2woff-zopfli $ttf
-done
 
-mkdir -p ./fonts/web/woff
-woffs=$(ls ./fonts/static/*/*.woff)
-for woff in $woffs; do
-    mv $woff ./fonts/web/woff/$(basename $woff)
-done
 
 
 
