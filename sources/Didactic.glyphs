@@ -28,18 +28,6 @@ name = "Enforce Compatibility Check";
 value = 1;
 },
 {
-name = blueFuzz;
-value = 0;
-},
-{
-name = blueShift;
-value = 7;
-},
-{
-name = blueScale;
-value = 0;
-},
-{
 name = fsType;
 value = (
 );
@@ -78,7 +66,7 @@ Tag = wght;
 );
 }
 );
-date = "2022-01-29 04:36:41 +0000";
+date = "2022-02-18 16:16:59 +0000";
 designer = "Tyler Finck";
 designerURL = "https://www.tyfromtheinternet.com";
 familyName = Didactic;
@@ -33924,5 +33912,5 @@ manufacturer = "Etcetera Type Co";
 manufacturerURL = "https://www.etceteratype.co";
 unitsPerEm = 2000;
 versionMajor = 3;
-versionMinor = 100;
+versionMinor = 600;
 }
